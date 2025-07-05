@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta description="description" content="Numenor Chamber of Commerce - Supporting local business and fostering community growth.">
+    <meta name="author" content="Nephi Imo">
+    <title>Numenor Chamber of Commerce</title>
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css" media="screen and (min-width: 768px)">
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/courses.js" defer></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <img src="images/num-logo.svg" alt="Numenor Chamber of Commerce Logo" class="logo">
+            <span class="site-name">Nephi Imo</span>
+            <button id="menu-toggle" class="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="primary-nav">
+                <span id="menu-icon">&#9776;</span>
+            </button>
+        </div>
+        <nav id="primary-nav" class="nav-menu">
+            <a href="index.html">Home</a>
+            <a href="directory.html">Directory</a>
+            <a href="join.html">Join</a>
+            <a href="discover.html">Discover</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Home</h1>
+
+        <div class="top-section">
+            <section class="about-me">
+                <h2>About Me</h2>
+                <p>I'm Nephi Imo, a passionate web developer and storyteller from Nigeria. I build responsive, user-centered websites that create real impact. I'm driven by a love for learning, creativity, and helping businesses grow through clean, effective web solutions. When I'm not coding, I'm crafting poetry to inspire and connect people.</p>
+            </section>
+            
+            <section class="student-photo">
+                <h2>Student Photo</h2>
+                <img src="images/student-photo.webp" alt="Student Photo" loading="lazy">
+            </section>
+        </div>
+
+        <section class="web-courses">
+            <h2>Web Certificate Courses</h2>
+            <div class="course-buttons">
+                <button id="all">All</button>
+                <button id="cse">CSE</button>
+                <button id="wdd">WDD</button>
+            </div>
+            <div id="course-container" class="course-list"></div>
+            <p>Total Credits: <span id="total-credits">0</span></p>
+        </section>
+
+        <div class="social-links">
+            <a href="https://github.com/NephiImo" target="_blank"> <img src="images/github.svg" alt="GitHub"></a>
+            <a href="https://linkedin.com/in/nephi-imo" target="_blank"><img src="images/linkedin.svg" alt="LinkedIn"></a>
+            <a href="https://instagram.com/raynoi_" target="_blank"><img src="images/ig.svg" alt="Instagram"></a>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentYear"></span> | Nephi Imo | Nigeria</p>
+        <p id="lastModified"></p>
+    </footer>
+
+</body>
+</html>

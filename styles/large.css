@@ -1,0 +1,92 @@
+@media (min-width: 768px) {
+    header {
+        display: block;
+    }
+
+    .header-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav-menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        background-color: transparent;
+        width: 100%;
+        padding: 1rem 0;
+    }
+
+    .nav-menu a {
+        border: none;
+        padding: 1rem 2rem;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .logo {
+        width: 150px;
+        margin-bottom: -5rem;
+    }
+
+    .site-name {
+        font-size: 1.7rem;
+    }
+
+    main {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 2rem;
+    }
+
+    main h1 {
+        grid-column: 1 / -1;
+        text-align: left;
+    }
+
+    .top-section {
+        display: grid;
+        grid-template-columns: 3fr 2fr;
+        gap: 2rem;
+    }
+
+    .about-me {
+        grid-column: 1 / 2;
+    }
+
+    .student-photo {
+        grid-column: 2 / 3;
+    }
+
+    .web-courses {
+        grid-column: 1 / -1;
+        max-width: 100%;
+    }
+
+    .course-buttons {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .course-buttons button {
+        width: 23rem;
+    }
+
+    .course-list {
+        display: flex;
+        justify-content: space-around;
+        gap: 1rem;
+    }
+
+    .course-list li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .social-links a img {
+        width: 40px;
+    }
+}
