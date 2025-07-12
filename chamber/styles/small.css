@@ -161,7 +161,7 @@ h2 {
     margin-bottom: 1rem;
 }
 
-.course-buttons button{
+.course-buttons button {
     margin: 0.5rem;
     padding: 0.5rem 1rem;
     background-color: var(--secondary-color);
@@ -195,14 +195,81 @@ h2 {
     text-align: center;
 }
 
+.directory-container.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.directory-container.list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+.business-card {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.business-card img {
+    width: 100%;
+    max-width: 150px;
+    margin: auto;
+    display: block;
+    border-radius: 4px;
+}
+
+.business-card.gold {
+    border: 2px solid gold;
+    background-color: #fffbe6;
+}
+
+.business-card.silver {
+    border: 2px solid silver;
+    background-color: #f2f2f2;
+}
+
+.view-toggle {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.view-toggle button.active {
+    background-color: var(--accent-color);
+    color: white;
+}
+
 footer {
     background-color: var(--primary-color);
     color: white;
     text-align: center;
-    padding: 1rem;
+    padding: 1.5rem 1rem;
+    font-size: 0.9rem;
 }
 
-.social-links{
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    text-align: left;
+}
+
+.footer-contact,
+.footer-dev {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.social-links {
     display: flex;
     justify-content: center;
     gap: 1rem;
@@ -210,7 +277,7 @@ footer {
 }
 
 .social-links a img {
-    width: 30px;
+    width: 50px;
 }
 
 footer p {

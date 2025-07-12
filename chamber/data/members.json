@@ -1,0 +1,61 @@
+{
+    "members": [
+        {
+            "name": "Green Leaf Bakery",
+            "address": "123 Main St, Numenor",
+            "phone": "555-1234",
+            "website": "https://greenleaf.com",
+            "image": "images/glf.svg",
+            "membership": 3
+        },
+        {
+            "name": "Forge & Steel Co.",
+            "address": "234 Forge Rd, Numenor",
+            "phone": "555-2234",
+            "website": "https://forgeco.com",
+            "image": "images/fsc.jpg",
+            "membership": 2
+        },
+        {
+            "name": "Eagle Tech",
+            "address": "789 Tech Blvd, Numenor",
+            "phone": "555-3344",
+            "website": "https://eagletech.com",
+            "image": "images/egt.png",
+            "membership": 1
+        },
+        {
+            "name": "Smith & Co.",
+            "address": "456 Elm St, Numenor",
+            "phone": "555-5678",
+            "website": "https://smithco.com",
+            "image": "images/smnc.webp",
+            "membership": 2            
+        },
+        {
+            "name": "Lumber Tools",
+            "address": "45 Main St, Numenor",
+            "phone": "555-9034",
+            "website": "https://lumbertool.com",
+            "image": "images/lT.png",
+            "membership": 3
+        },
+        {
+            "name": "Cloudsoft Tech",
+            "address": "78 Sky Plaza, Numenor",
+            "phone": "555-8769",
+            "website": "https://cloudsofttech.com",
+            "image": "images/cSt.png",
+            "membership": 1
+        },
+        {
+            "name": "Rayn's Poet",
+            "address": "120 Cotton Tree St, Numenor",
+            "phone": "565-1234",
+            "website": "https://raynspoet.com",
+            "image": "images/rp.png",
+            "membership": 2
+
+        }
+    ]
+}

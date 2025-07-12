@@ -1,4 +1,4 @@
-@media (min-width: 768px) {
+@media (min-width: 992px) {
     header {
         display: block;
     }
@@ -86,7 +86,35 @@
         text-align: center;
     }
 
+    .directory-container.grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .directory-container.list .business-card img {
+        display: none;
+    }
+
     .social-links a img {
         width: 40px;
+    }
+
+    .footer-container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .footer-contact {
+        flex: 1;
+        padding: 0 1rem;
+    }
+
+    .footer-dev {
+        flex: 1;
+        padding: 0 1rem;
+        align-items: flex-end;
+        text-align: left;
     }
 }

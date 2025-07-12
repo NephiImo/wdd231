@@ -5,15 +5,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Nephi Imo">
     <meta name="description" content="Chamber Directory Page">
+    
+    <!-- Social Media Meta Tags -->
     <meta property="og:title" content="Nephi Imo">
-    <meta property="og:description" content="This page introduces Nephi Imo; a Software Development student completing his first Certificate in Web and Computer Programming.">
-    <meta property="og:url" content="https://nephiimo.github.io/chamber/index.html">
+    <meta property="og:description" content="Explore local businesses in Numenor through our member directory.">
+    <meta property="og:url" content="http://127.0.0.1:5500/chamber/directory.html">
     <meta property="og:image" content="file:///C:/Users/USER/Desktop/wdd231/chamber/images/image-url.svg">
-    <title>Chamber Directory Page</title>
-    <link rel="icon" href="images/favicon.ico">
+    
+    <title>Directory | Numenor Chamber of Commerce</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    
+    <!-- Normalize CSS -->
+     <link rel="stylesheet" href="styles/normalize.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css" media="screen and (min-width: 992px)">
+    
+    <!-- JavaScript -->
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/directory.js" defer></script>
 </head>
 
 <body>
-    <p>hello world</p>
+    <header>
+        <div class="header-container">
+            <img src="images/num-logo.svg" alt="My Logo" class="logo">
+            <span class="site-name">Numenor Chamber of Commerce</span>
+            <button id="menu-toggle" class="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="primary-nav">
+                <span id="menu-icon">&#9776;</span>
+            </button>
+        </div>
+        <nav id="primary-nav" class="nav-menu">
+            <a href="index.html">Home</a>
+            <a href="directory.html">Directory</a>
+            <a href="join.html">Join</a>
+            <a href="discover.html">Discover</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Member Directory</h1>
+
+        <div class="view-toggle">
+            <button id="grid-view">Grid View</button>
+            <button id="list-view">List View</button>
+        </div>
+
+        <div id="directory" class="directory-container grid"></div>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-contact">
+                <p>Numenor Chamber of Commerce</p>
+                <p>10 Main Eregion St</p>
+                <p>Numenor, Mail 567</p>    
+                <p>info@numchamber.org</p>    
+                <p>099-783-2234</p>    
+            </div>
+
+            <div class="social-links">
+                <a href="https://github.com/NephiImo" target="_blank"> <img src="images/github.svg" alt="GitHub Page"></a>
+                <a href="https://linkedin.com/in/nephi-imo" target="_blank"><img src="images/linkedin.svg" alt="LinkedIn"></a>
+                <a href="https://instagram.com/raynoi_" target="_blank"><img src="images/ig.svg" alt="Instagram"></a>
+            </div>
+
+            <div class="footer-dev">
+                <p>Nephi Imo</p>
+                <p>WDD231 Class Project</p>    
+                <p>&copy; <span id="currentYear"></span>Numenor Chamber of Commerce</p>
+                <p id="lastModified"></p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
