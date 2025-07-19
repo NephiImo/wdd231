@@ -72,6 +72,11 @@ header {
     border-top: none;
 }
 
+.nav-menu a.active{
+    background-color: var(--accent-color);
+    color: white;
+}
+
 .nav-menu.show {
     display: flex;
 }
@@ -207,6 +212,104 @@ h2 {
     gap: 1rem;
 }
 
+.hero img {
+    width: 100%;
+    height: auto;
+    max-height: 250px;
+    object-fit: cover;
+    display: block;
+}
+
+.info-panels {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+/* === Weather & Forecast Panels === */
+.weather,
+.forecast {
+    background-color: #f9f9f9;
+    padding: 1rem;
+    border-radius: 0.75rem;
+    margin-top: 1rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+#current-weather p {
+    margin: 0.25rem 0;
+    font-size: 1rem;
+    color: #333;
+}
+
+#forecast li {
+    margin: 0.3rem 0;
+    font-size: 0.95rem;
+    color: #444;
+}
+
+/* === Spotlights Section === */
+.spotlight-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: #fffef7;
+    border-radius: 1rem;
+}
+
+.spotlight-card {
+    background-color: #ffffff;
+    padding: 1rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+.spotlight-card img {
+    max-width: 100px;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.spotlight-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #2c3e50;
+}
+
+.spotlight-card p {
+    font-size: 0.95rem;
+    margin: 0.3rem 0;
+    color: #555;
+}
+
+.spotlight-card a {
+    display: inline-block;
+    margin-top: 0.5rem;
+    color: #0077cc;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.spotlight-card a:hover {
+    text-decoration: underline;
+}
+
+.badge {
+    display: inline-block;
+    margin-top: 0.75rem;
+    padding: 0.3rem 0.75rem;
+    font-size: 0.85rem;
+    color: white;
+    border-radius: 20px;
+    background-color: #ffd700;
+}
+
+.badge.silver {
+    background-color: #c0c0c0;
+}
 
 .business-card {
     background-color: white;

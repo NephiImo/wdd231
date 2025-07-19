@@ -1,4 +1,4 @@
-@media (min-width: 992px) {
+@media (min-width: 768px) {
     header {
         display: block;
     }
@@ -23,6 +23,10 @@
         padding: 1rem 2rem;
     }
 
+    .nav-menu a.active{
+    border-radius: 2rem; 
+    }
+
     .hamburger {
         display: none;
     }
@@ -40,6 +44,10 @@
         max-width: 1200px;
         margin: 0 auto;
         padding: 2rem;
+    }
+
+    .img .hero {
+        align-items: center;
     }
 
     main h1 {
@@ -84,6 +92,42 @@
     .course-list li {
         width: 100%;
         text-align: center;
+    }
+
+    .info-panels {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 2rem;
+        margin-top: 2rem;
+    }
+
+    /* Larger grid for spotlight cards */
+    .spotlight-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 2rem;
+        padding: 2rem;
+    }
+
+    .hero {
+        position: relative;
+        text-align: center;
+    }
+
+    .hero img {
+        width: 100%;
+        height: auto;
+        max-height: 400px;
+    }
+
+    .cta-button {
+        position: absolute;
+        bottom: 10%;
+        right: 5%;
+        background: #333;
+        color: #fff;
+        padding: 0.5rem 1rem;
+        text-decoration: none;
     }
 
     .directory-container.grid {
