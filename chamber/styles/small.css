@@ -387,7 +387,7 @@ h2 {
     border-radius: 6px;
     font-size: 1.1rem;
     cursor: pointer;
-    transition: background-color 0.3 ease;
+    transition: background-color 0.3s ease;
 }
 
 #membership-form button:hover {
@@ -434,7 +434,7 @@ h2 {
     color: var(--accent-color);
     font-weight: 600;
     cursor: pointer;
-    transition: all 0.3 ease;
+    transition: all 0.3s ease;
 }
 
 .card button:hover {
@@ -449,10 +449,10 @@ h2 {
     animation: fadeInMoveUp 0.8s ease forwards;
 }
 
-.fade-in:nth-child(1) { animation-delay: 0.2; }
-.fade-in:nth-child(2) { animation-delay: 0.4; }
-.fade-in:nth-child(3) { animation-delay: 0.6; }
-.fade-in:nth-child(4) { animation-delay: 0.8; }
+.fade-in:nth-child(1) { animation-delay: 0.2s; }
+.fade-in:nth-child(2) { animation-delay: 0.4s; }
+.fade-in:nth-child(3) { animation-delay: 0.6s; }
+.fade-in:nth-child(4) { animation-delay: 0.8s; }
 
 @keyframes fadeInMoveUp {
     to {
