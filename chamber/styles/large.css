@@ -138,6 +138,35 @@
         display: none;
     }
 
+    .form-and-cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 2rem;
+        padding: 2rem;
+        align-items: flex-start;
+        margin: 0 auto;
+        max-width: 1200px;
+    }
+
+    .form-section {
+        flex: 1 1 60%;
+    }
+
+    .membership-levels {
+        flex: 1 1 40%;
+    }
+
+    .membership-cards {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    form {
+        flex: 1 1 60%;
+    }
+
     .social-links a img {
         width: 40px;
     }

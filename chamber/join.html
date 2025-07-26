@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Nephi Imo">
+    <meta name="description" content="Join Us">
+    
+    <!-- Social Media Meta Tags -->
+    <meta property="og:title" content="Nephi Imo">
+    <meta property="og:description" content="Be a member and enjoy numerous benefits!">
+    <meta property="og:url" content="https://nephiimo.github.io/wdd231/chamber/join.html">
+    <meta property="og:image" content="images/image-url.svg">
+    
+    <title>Join Us | Numenor Chamber of Commerce</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    
+    <!-- Normalize CSS -->
+     <link rel="stylesheet" href="styles/normalize.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css" media="screen and (min-width: 768px)">
+    
+    <!-- JavaScript -->
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/join.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <img src="images/num-logo.svg" alt="My Logo" class="logo">
+            <span class="site-name">Numenor Chamber of Commerce</span>
+            <button id="menu-toggle" class="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="primary-nav">
+                <span id="menu-icon">&#9776;</span>
+            </button>
+        </div>
+        <nav id="primary-nav" class="nav-menu">
+            <a href="index.html">Home</a>
+            <a href="directory.html">Directory</a>
+            <a href="join.html" class="active">Join</a>
+            <a href="discover.html">Discover</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="form-and-cards">
+            <section class="form-section">
+                <h2>Membership Application Form</h2>
+                <form id="membership-form">
+                    <label for="first-name">First Name*</label>
+                    <input type="text" name="firstName" title="Enter your first name" required autocomplete="given-name">
+
+                    <label for="last-name">Last Name*</label>
+                    <input type="text" name="lastName" title="Enter your last name" required autocomplete="family-name">
+                    
+                    <label for="title">Organization Title</label>
+                    <input type="text" name="orgTitle" title="Your role in the organization" autocomplete="organization-title"
+                            pattern="[A-Za-z\s\-]{7,}">
+
+                    <label for="email">Email*</label>
+                    <input type="email" name="email" title="Enter your email address" required autocomplete="email"
+                            placeholder="you@example.com">
+                    
+                    <label for="phone">Mobile Phone*</label>
+                    <input type="tel" name="phone" title="Enter your mobile phone number" required autocomplete="tel">
+                    
+                    <label>Organization Name*</label>
+                    <input type="text" name="businessName" title="Business/Organization Name" required autocomplete="organization">
+                    
+                    <label>Membership level</label>
+                    <select name="membership" title="Select your membership level">
+                        <option value="np">NP Membership (Free)</option>
+                        <option value="bronze">Bronze</option>
+                        <option value="silver">Silver</option>
+                        <option value="gold">Gold</option>
+                    </select>
+                    
+                    <label>Business Description</label>
+                    <textarea name="description" title="Describe your organization"></textarea>
+                    
+                    <input type="hidden" name="timestamp" id="timestamp">
+
+                    <button type="submit">Apply for Membership</button>
+                </form>
+            </section>
+
+            <section class="membership-levels">
+                <h2>Membership Levels</h2>
+
+                <!-- Cards -->
+                <div class="membership-cards">
+                    <div class="card fade-in" id="nonprofit-card">
+                        <h3>Non Profit Membership Level</h3>
+                        <button onclick="openModal('nonprofit-modal')">Learn More</button>
+                    </div>
+                    <div class="card fade-in" id="bronze-card">
+                        <h3>Bronze Membership Level</h3>
+                        <button onclick="openModal('bronze-modal')">Learn More</button>
+                    </div>
+                    <div class="card fade-in" id="silver-card">
+                        <h3>Silver Membership Level</h3>
+                        <button onclick="openModal('silver-modal')">Learn More</button>
+                    </div>
+                    <div class="card fade-in" id="gold-card">
+                        <h3>Gold Membership Level</h3>
+                        <button onclick="openModal('gold-modal')">Learn More</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- Modals -->
+         <div id="nonprofit-modal" class="modal">
+            <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="nonprofit-heading" tabindex="-1">
+                <span class="close" onclick="closeModal('nonprofit-modal')">&times;</span>
+                <h3 id="nonprofit-heading">Non Profit Benefits</h3>
+                <ul>
+                    <li>Free access to community events</li>
+                    <li>Networking with local businesses</li>
+                    <li>Basic advertising options</li>
+                </ul>
+            </div>
+         </div>
+
+         <div id="bronze-modal" class="modal">
+            <div class="modal-content" role="dialog" aria-labelledby="bronze-heading" tabindex="-1">
+                <span class="close" onclick="closeModal('bronze-modal')">&times;</span>
+                <h3 id="bronze-heading">Bronze Benefits</h3>
+                <ul>
+                    <li>Event discounts</li>
+                    <li>Listing in our newsletter</li>
+                    <li>Priority email support</li>
+                </ul>
+            </div>
+         </div>
+
+         <div id="silver-modal" class="modal">
+            <div class="modal-content" role="dialog" aria-labelledby="silver-heading" tabindex="-1">
+                <span class="close" onclick="closeModal('silver-modal')">&times;</span>
+                <h3 id="silver-heading">Silver Benefits</h3>
+                <ul>
+                    <li>Training sessions included</li>
+                    <li>Homepage spotlight once a month</li>
+                    <li>Social media promotions</li>
+                </ul>
+            </div>
+         </div>
+
+         <div id="gold-modal" class="modal">
+            <div class="modal-content" role="dialog" aria-labelledby="gold-heading" tabindex="-1">
+                <span class="close" onclick="closeModal('gold-modal')">&times;</span>
+                <h3 id="gold-heading">Gold Benefits</h3>
+                <ul>
+                    <li>All Silver benefits</li>
+                    <li>Unlimited homepage spotlight</li>
+                    <li>Invitations to exclusive events</li>
+                </ul>
+            </div>
+         </div>
+
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-contact">
+                <p>Numenor Chamber of Commerce</p>
+                <p>10 Main Eregion St</p>
+                <p>Numenor, Mail 567</p>    
+                <p>info@numchamber.org</p>    
+                <p>099-783-2234</p>    
+            </div>
+
+            <div class="social-links">
+                <a href="https://github.com/NephiImo" target="_blank"> <img src="images/github.svg" alt="GitHub Page"></a>
+                <a href="https://linkedin.com/in/nephi-imo" target="_blank"><img src="images/linkedin.svg" alt="LinkedIn"></a>
+                <a href="https://instagram.com/raynoi_" target="_blank"><img src="images/ig.svg" alt="Instagram"></a>
+            </div>
+
+            <div class="footer-dev">
+                <p>Nephi Imo</p>
+                <p>WDD231 Class Project</p>    
+                <p>&copy; <span id="currentYear"></span>Numenor Chamber of Commerce</p>
+                <p id="lastModified"></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Nephi Imo">
-    <meta name="description" content="Chamber Home Page">
+    <meta name="description" content="Thank You Page">
     
     <!-- Social Media Meta Tags -->
     <meta property="og:title" content="Nephi Imo">
-    <meta property="og:description" content="Welcome to Numenor's Chamber of Commerce.">
-    <meta property="og:url" content="https://nephiimo.github.io/wdd231/chamber/index.html">
+    <meta property="og:description" content="Congratulations! You're a Member now.">
+    <meta property="og:url" content="https://nephiimo.github.io/wdd231/chamber/thankyou.html">
     <meta property="og:image" content="images/image-url.svg">
     
-    <title>Home| Numenor Chamber of Commerce</title>
+    <title>Thank You | Numenor Chamber of Commerce</title>
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     
     <!-- Normalize CSS -->
@@ -25,7 +25,7 @@
     <!-- JavaScript -->
     <script src="scripts/date.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
-    <script src="scripts/home.js" defer></script>
+    <script src="scripts/thankyou.js"></script>
 </head>
 
 <body>
@@ -38,40 +38,25 @@
             </button>
         </div>
         <nav id="primary-nav" class="nav-menu">
-            <a href="index.html" class="active">Home</a>
+            <a href="index.html">Home</a>
             <a href="directory.html">Directory</a>
-            <a href="join.html">Join</a>
+            <a href="join.html" class="active">Join</a>
             <a href="discover.html">Discover</a>
         </nav>
     </header>
 
-    <main>
-        <section class="hero">
-            <img src="images/num-hero.jpg" alt="Scenic view of Numenor">
-            <a href="join.html" class="cta-button">Keynote Tickets</a>
-        </section>
+    <main class="thankyou-container">
+        <h1>Thank You for Joining!</h1>
+        <p>Your membership form has been successfully submitted. We're excited to welcome you to the Numenor Chamber of Commerce!</p>
 
-        <h1>Home</h1>
-
-        <section class="info-panels">
-            <section class="events">
-                <h2>Events</h2>
-                <p>Upcoming events info here...</p>
-            </section>
-
-            <section id="weather" class="weather">
-                <h2>Current Weather</h2>
-                <div id="current-weather"></div>
-            </section>
-
-            <section class="forecast">
-                <h2>Weather Forecast</h2>
-                <ul id="forecast"></ul>
-            </section>
-        </section>
-
-        <section class="spotlight">
-            <div class="spotlight-container"></div>
+        <section class="submitted-info">
+            <h2>Your Information:</h2>
+            <p><strong>First Name:</strong> <span id="firstName"></span></p>
+            <p><strong>Last Name:</strong> <span id="lastName"></span></p>
+            <p><strong>Email:</strong> <span id="email"></span></p>
+            <p><strong>Mobile Number:</strong> <span id="phone"></span></p>
+            <p><strong>Business Name:</strong> <span id="businessName"></span></p>
+            <p><strong>Submitted:</strong> <span id="timestamp"></span></p>
         </section>
     </main>
 
