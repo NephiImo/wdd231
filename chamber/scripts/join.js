@@ -40,7 +40,7 @@ form.addEventListener('submit', function (e) {
     const timestamp = new Date().toLocaleDateString();
 
     // Redirect with query params
-    const url = new URL('thankyou.html', window.location.origin);
+    const url = new URL('https://nephiimo.github.io/wdd231/chamber/thankyou.html', window.location.origin);
     url.searchParams.append('firstName', firstName);
     url.searchParams.append('lastName', lastName);
     url.searchParams.append('email', email);
