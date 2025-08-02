@@ -528,6 +528,80 @@ h2 {
     color: white;
 }
 
+/* discover.css */
+.discover-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "card1"
+        "card2"
+        "card3"
+        "card4"
+        "card5"
+        "card6"
+        "card7"
+        "card8";
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+.discover-card {
+    background-color: var(--background-color);
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem;
+}
+
+.discover-card h2 {
+    font-size: 1.25rem;
+    margin: 0.5rem 0;
+    color: var(--primary-color)
+}
+
+.discover-card figure {
+    margin: 0;
+    width: 100%;
+}
+
+.discover-card img {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.discover-card address,
+.discover-card p {
+    line-height: 1.4;
+    font-size: 0.95rem;
+}
+
+.discover-card button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    align-self: flex-start;
+}
+
+.discover-card button:hover {
+    background-color: var(--accent-color);
+}
+
+.visit-counter {
+    margin: 2rem 0;
+    text-align: center;
+    font-weight: bold;
+}
+
 footer {
     background-color: var(--primary-color);
     color: white;

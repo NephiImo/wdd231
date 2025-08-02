@@ -1,0 +1,68 @@
+{
+    "places": [
+        {
+            "title": "Zuma Rock",
+            "image": "images/zuma-rock.webp",
+            "imageAlt": "Iconic Zuma Rock",
+            "address": "1 Harborfront Ave, Andunie, Numenor",
+            "description": "This magnificent monolith rises 725 meters above its surroundings. Its striking appearance—often likened to a human face—has earned it the nickname 'The Gateway to Andunie'.",
+            "link": "Learn More"
+        },
+        {
+            "title": "Agbokim Waterfall",
+            "image": "images/agbokim-waterfall.webp",
+            "imageAlt": "Agbokim Waterfall",
+            "address": "Sacred Mountain Road, Central Numenor",
+            "description": "A seven-tiered cascade surrounded by dense rainforests and steep cliffs. During the rainy season, sunlight refracts through its mists to create vibrant rainbows—any photographer’s dream.",
+            "link": "Learn More"
+        },
+        {
+            "title": "Landmark Beach",
+            "image": "images/landmark-beach.webp",
+            "imageAlt": "Landmark beach in Romenna",
+            "address": "Landmark Beach, Romenna",
+            "description": "A bustling coastal hub famous for its blend of leisure, recreation, and adventure activities suitable for all ages.",
+            "link": "Learn More"
+        },
+        {
+            "title": "Obudu Mountain",
+            "image": "images/obudu-mountain.webp",
+            "imageAlt": "Sacred peak of Obudu",
+            "address": "Southwestern Slopes, Hyarnustar, Numenor",
+            "description": "This place could be referred to as Numenor's Eden. The highland paradise boasts a subtropical climate (15–23°C), rolling hills, and mist-covered valleys.",
+            "link": "Learn More"
+        },
+        {
+            "title": "Riyom Rock",
+            "image": "images/riyom-rock.webp",
+            "imageAlt": "Riyom rock in Armenelos",
+            "address": "Royal Heights, Armenelos",
+            "description": "A geological marvel of precariously stacked boulders, shaped over there for thousands of years. From certain angles, it mirrors the map of Armenelos",
+            "link": "Learn More"
+        },
+        {
+            "title": "Gurara Waterfall",
+            "image": "images/gurara-waterfall.webp",
+            "imageAlt": "Gurara Waterfall",
+            "address": "West Gurara, Numenor",
+            "description": "Spanning 200 meters with a 30-meter drop, Gurara Waterfall is a spectacle of nature’s power. Its character shifts with the seasons: gentle streams flow during the dry months, while the rainy season transforms it into a roaring cascade.",
+            "link": "Learn More"
+        },
+        {
+            "title": "Awhum Cave and Waterfall",
+            "image": "images/awhum-cave.webp",
+            "imageAlt": "Awhum Cave and Waterfall",
+            "address": "Awhum Sanctuary, Western Shore",
+            "description": "For a blend of spirituality and natural beauty, Awhum Cave is unparalleled. This sacred site features a network of caves and a cascading waterfall, believed by locals to possess healing powers.",
+            "link": "Learn More"
+        },
+        {
+            "title": "Aso Rock",
+            "image": "images/aso-rock.webp",
+            "imageAlt": "Aso Rock in Avallone",
+            "address": "Eastern Cape, Avallone",
+            "description": "More than just a geological wonder, Aso Rock symbolizes Numenor’s political heartbeat. This 400-meter monolith stands as a silent guardian over the Presidential Villa, National Assembly, and Supreme Court, earning its revered title, 'Victorious Rock.'",
+            "link": "Learn More"
+        }
+    ]
+}
