@@ -51,10 +51,6 @@
         grid-template-columns: repeat(3, 1fr);
     }
 
-    .about-story {
-        gap: 3rem;
-    }
-
     .contact-hero h1 {
         font-size: 30px;
         margin-top: 0.5rem;
