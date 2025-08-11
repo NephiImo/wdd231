@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Nephi Imo">
+    <meta name="description" content="Find a variety of Freshly baked banana bread in our Shop, delivered with love by Te's Krumbbs.">
+    <title>Shop | Te's Krumbbs</title>
+
+    <!-- Social Media Meta Tags -->
+    <meta property="og:title" content="Te's Krumbbs - Fresh Banana Bread">
+    <meta property="og:description" content="Explore every flavor of Te’s Krumbbs banana bread.">
+    <meta property="og:url" content="https://nephiimo.github.io/wdd231/project/index.html">
+    <meta property="og:image" content="images/image_url.svg">
+
+    <title>Te's Krumbbs | Fresh Banana Bread Delivered</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css" media="(min-width: 641px)">
+    <link rel="stylesheet" href="styles/large.css" media="(min-width: 1025px)">
+
+    <!-- JS Files -->
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="container header-flex">
+            <div class="brand">
+                <img src="images/tk_logo.svg" alt="Te's Krumbbs logo" width="50" height="50" loading="lazy">
+                <h1 class="logo">Te's Krumbbs</h1>
+            </div>
+            <button id="menu-toggle" class="hamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav-links">
+                ☰
+            </button>
+            <nav class="nav-menu" id="nav-links">
+                <button class="close-nav" aria-label="Close menu">✕</button>
+                <a href="index.html">Home</a>
+                <a href="shop.html" class="active">Shop</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="#" id="cart-btn" aria-label="View cart">
+                    🛒 <span id="cart-count" class="cart-count">0</span>
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="shop-hero">
+            <h2>Our Full Selection</h2>
+            <p>Explore every flavor of Te’s Krumbbs banana bread.</p>
+        </section>
+
+        <section class="shop-products">
+            <div id="productGrid" class="product-grid">
+                <!-- Products will be loaded here by shop.js -->
+            </div>
+        </section>
+    </main>
+        
+    <!-- Cart Modal -->
+    <div id="cart-modal" class="cart-modal">
+        <div class="cart-modal-content">
+            <div class="cart-modal-header">
+                <h2>Your Cart</h2>
+                <button class="close-cart" aria-label="Close cart">&times;</button>
+            </div>
+
+            <div id="cart-items" class="cart-items">
+                <!-- JS will populate cart items here -->
+            </div>
+
+            <div class="cart-modal-footer">
+                <div class="cart-total">
+                    <span>Total:</span>
+                    <strong id="cart-total">$0.00</strong>
+                </div>
+                <button id="checkout-btn" class="checkout-btn">Checkout</button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h3>Te's Krumbbs</h3>
+                <p>Fresh banana bread delivered with love to your doorstep.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact Info</h4>
+                <p>Email: <a href="mailto:hello@teskrumbbs.com">hello@teskrumbbs.com</a></p>
+                <p>WhatsApp: <a href="https://wa.me/234XXXXXXXXXX">Chat Now</a></p>
+            </div>
+            <div class="footer-newsletter">
+                <h4>Newsletter</h4>
+                <p>Subscribe for fresh updates and special offers</p>
+                <form id="newsletter-form">
+                    <input type="email" placeholder="Your email" aria-label="Email" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="year"></span> Te's Krumbbs. All rights reserved.</p>
+        </div>
+    </footer>
+    <script type="module">
+        import { loadProducts } from './scripts/products.js';
+        document.addEventListener('DOMContentLoaded', () => {
+            loadProducts(); // load all products
+        });
+    </script>
+</body>
+</html>

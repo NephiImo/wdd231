@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Nephi Imo">
+    <meta name="description" content="Thank you!">
+    <title>Thank You | Te's Krumbbs</title>
+
+    <!-- Social Media Meta Tags -->
+    <meta property="og:title" content="Te's Krumbbs - Fresh Banana Bread">
+    <meta property="og:description" content="Delicious, artisanal banana bread baked and delivered to your door.">
+    <meta property="og:url" content="https://nephiimo.github.io/wdd231/project/index.html">
+    <meta property="og:image" content="images/image_url.svg">
+
+    <title>Te's Krumbbs | Fresh Banana Bread Delivered</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css" media="(min-width: 641px)">
+    <link rel="stylesheet" href="styles/large.css" media="(min-width: 1025px)">
+
+    <!-- JS Files -->
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/thankyou.js" defer></script>
+</head>
+
+<body class="home-page">
+    <header>
+        <div class="container header-flex">
+            <div class="brand">
+                <img src="images/tk_logo.svg" alt="Te's Krumbbs logo" width="50" height="50" loading="lazy">
+                <h1 class="logo">Te's Krumbbs</h1>
+            </div>
+            <button id="menu-toggle" class="hamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav-links">
+                ☰
+            </button>
+            <nav class="nav-menu" id="nav-links">
+                <button class="close-nav" aria-label="Close menu">✕</button>
+                <a href="index.html">Home</a>
+                <a href="shop.html">Shop</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="thankyou-container">
+            <h1>Form Submission Results</h1>
+            <p>Thank you for contacting us! Here is the information you submitted:</p>
+        
+        <section class="submitted-info">
+            <h2>Your Information:</h2>
+            <p><strong>Full Name:</strong> <span id="name"></span></p>
+            <p><strong>Email:</strong> <span id="email"></span></p>
+            <p><strong>Submitted:</strong> <span id="timestamp"></span></p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h3>Te's Krumbbs</h3>
+                <p>Fresh banana bread delivered with love to your doorstep.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact Info</h4>
+                <p>Email: <a href="mailto:hello@teskrumbbs.com">hello@teskrumbbs.com</a></p>
+                <p>WhatsApp: <a href="https://wa.me/234XXXXXXXXXX">Chat Now</a></p>
+            </div>
+            <div class="footer-newsletter">
+                <h4>Newsletter</h4>
+                <p>Subscribe for fresh updates and special offers</p>
+                <form id="newsletter-form">
+                    <input type="email" placeholder="Your email" aria-label="Email" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="year"></span> Te's Krumbbs. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

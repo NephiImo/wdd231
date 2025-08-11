@@ -1,0 +1,109 @@
+{
+    "products": [
+        {
+            "title": "Classic",
+            "image": "images/classic.webp",
+            "imageAlt": "Classic banana bread loaf",
+            "description": "Our original, timeless recipe — moist, fluffy, and full of ripe banana goodness.",
+            "price": 8.99
+        },
+        {
+            "title": "Choc Chip",
+            "image": "images/choc_chip.webp",
+            "imageAlt": "Banana bread with chocolate chips",
+            "description": "A sweet twist on the classic, loaded with rich, melty chocolate chips.",
+            "price": 9.50
+        },
+        {
+            "title": "Coconana",
+            "image": "images/coconana.webp",
+            "imageAlt": "Banana bread with coconut flakes",
+            "description": "Tropical flavors meet home baking — fresh coconut flakes folded into banana batter.",
+            "price": 10.99
+        },
+        {
+            "title": "Choc Chip Coconana",
+            "image": "images/choc_chip_coconana.webp",
+            "imageAlt": "Banana bread with chocolate chips and coconut",
+            "description": "The best of both worlds — creamy coconut and decadent chocolate chips in one loaf.",
+            "price": 12.50
+        },
+        {
+            "title": "Heavy Choc",
+            "image": "images/heavy_choc.webp",
+            "imageAlt": "Rich chocolate banana bread",
+            "description": "For serious chocolate lovers — a dense, ultra-rich chocolate banana bread.",
+            "price": 14.99
+        },
+        {
+            "title": "Walnut Wonder",
+            "image": "images/walnut.webp",
+            "imageAlt": "Banana bread with chopped walnuts",
+            "description": "Crunchy toasted walnuts give this banana bread a nutty depth and satisfying texture.",
+            "price": 11.25
+        },
+        {
+            "title": "Cinnamon Swirl",
+            "image": "images/cinnamon_swirl.webp",
+            "imageAlt": "Banana bread with cinnamon swirl",
+            "description": "A warm cinnamon sugar swirl baked through the loaf for a cozy, spiced treat.",
+            "price": 10.75
+        },
+        {
+            "title": "Blueberry Bliss",
+            "image": "images/blueberry.webp",
+            "imageAlt": "Banana bread with fresh blueberries",
+            "description": "Juicy blueberries burst with sweetness in every bite of this moist loaf.",
+            "price": 12.00
+        },
+        {
+            "title": "Peanut Butter Banana",
+            "image": "images/peanut_butter.webp",
+            "imageAlt": "Banana bread with peanut butter drizzle",
+            "description": "A classic pairing — creamy peanut butter baked into moist banana bread.",
+            "price": 12.50
+        },
+        {
+            "title": "Lemon Glaze",
+            "image": "images/lemon_glaze.webp",
+            "imageAlt": "Banana bread with lemon glaze topping",
+            "description": "A zesty lemon glaze brings brightness to the sweet banana base.",
+            "price": 11.50
+        },
+        {
+            "title": "Mocha Banana",
+            "image": "images/mocha.webp",
+            "imageAlt": "Banana bread with coffee and chocolate",
+            "description": "Rich cocoa and espresso create a sophisticated banana bread blend.",
+            "price": 13.25
+        },
+        {
+            "title": "Banana Berry Mix",
+            "image": "images/berry_mix.webp",
+            "imageAlt": "Banana bread with mixed berries",
+            "description": "Raspberries, blueberries, and strawberries add a fruity burst of flavor.",
+            "price": 12.75
+        },
+        {
+            "title": "Almond Crunch",
+            "image": "images/almond_crunch.webp",
+            "imageAlt": "Banana bread with almond slices",
+            "description": "Lightly toasted almond slices give a delicate crunch to each bite.",
+            "price": 11.80
+        },
+        {
+            "title": "Caramel Drizzle",
+            "image": "images/caramel_drizzle.webp",
+            "imageAlt": "Banana bread with caramel drizzle topping",
+            "description": "A decadent caramel drizzle elevates this moist, flavorful loaf.",
+            "price": 13.50
+        },
+        {
+            "title": "Pumpkin Spice Banana",
+            "image": "images/pumpkin_spice.webp",
+            "imageAlt": "Banana bread with pumpkin spice flavors",
+            "description": "Seasonal pumpkin spice blends perfectly with sweet banana.",
+            "price": 12.20
+        }
+    ]
+}
