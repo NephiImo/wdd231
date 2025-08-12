@@ -11,7 +11,7 @@
     <meta property="og:title" content="Te's Krumbbs - Fresh Banana Bread">
     <meta property="og:description" content="Explore every flavor of Te’s Krumbbs banana bread.">
     <meta property="og:url" content="https://nephiimo.github.io/wdd231/project/index.html">
-    <meta property="og:image" content="images/image_url.svg">
+    <meta property="og:image" content="images/image_url.webp">
 
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 
@@ -24,14 +24,15 @@
     <!-- JS Files -->
     <script src="scripts/date.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <div class="container header-flex">
+        <div class="header-flex">
             <div class="brand">
-                <img src="images/tk_logo.svg" alt="Te's Krumbbs logo" width="50" height="50" loading="lazy">
-                <h1 class="logo">Te's Krumbbs</h1>
+                <img src="images/tk_logo.webp" alt="Te's Krumbbs logo" width="50" height="50" loading="lazy">
+                <span class="logo">Te's Krumbbs</span>
             </div>
             <button id="menu-toggle" class="hamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav-links">
                 ☰
@@ -66,7 +67,7 @@
         <div class="cart-modal-content">
             <div class="cart-modal-header">
                 <h2>Your Cart</h2>
-                <button class="close-cart" aria-label="Close cart">&times;</button>
+                <button aria-label="Close cart">&times;</button>
             </div>
 
             <div id="cart-items" class="cart-items">
@@ -74,7 +75,7 @@
             </div>
 
             <div class="cart-modal-footer">
-                <div class="cart-total">
+                <div>
                     <span>Total:</span>
                     <strong id="cart-total">$0.00</strong>
                 </div>
@@ -107,7 +108,7 @@
                 <p>Subscribe for fresh updates and special offers</p>
                 <form id="newsletter-form">
                     <input type="email" placeholder="Your email" aria-label="Email" required>
-                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                    <button type="submit" class="btn">Subscribe</button>
                 </form>
             </div>
         </div>
